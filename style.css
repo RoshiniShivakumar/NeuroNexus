@@ -1,0 +1,234 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand&family=Pacifico&family=Orbitron:wght@600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url('image.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(220, 200, 180, 0.25);
+      z-index: -1;
+    }
+
+    .form-container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      backdrop-filter: blur(12px);
+      padding: 45px 50px;
+      max-width: 600px;
+      margin: 60px auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 2px solid rgba(6, 40, 2, 0.87);
+      animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .form-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .form-title-icon {
+      width: 58px;
+      height: 58px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:#fff;
+      font-size: 26px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    img {
+      width: 58px;
+      height: 58px;
+      display: flex;
+    }
+
+    .form-title h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 38px;
+      background: linear-gradient(to right,rgb(15, 18, 14), rgb(29, 37, 28),rgb(28, 35, 25));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 6px rgba(2, 40, 19, 0.6);
+    }
+
+
+    label {
+      display: block;
+      margin-top: 22px;
+      color: rgba(7, 20, 0, 0.87);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 14px 18px;
+      margin-top: 10px;
+      border: 2px solid rgba(6, 40, 2, 0.87);
+      border-radius: 16px;
+      background: rgb(251, 251, 251);
+      font-size: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+    }
+
+    input:focus,
+    textarea:focus {
+      background: #fdfcfb;
+      outline: none;
+      box-shadow: 0 0 10px rgba(17, 240, 13, 0.35);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .gender-options {
+      margin-top: 14px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .gender-options label {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      background:rgb(247, 247, 247);
+      border-radius: 12px;
+      border: 2px solid rgba(6, 40, 2, 0.87);
+      font-size: 15px;
+      font-weight: 600;
+      color:rgb(16, 87, 45);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .gender-options input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    .gender-options label:hover {
+      background: #cce8cc;
+    }
+
+    .custom-select {
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .custom-select select {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: rgb(255, 255, 255);
+      border: 2px solid rgba(6, 40, 2, 0.87);
+      font-size: 17px;
+      font-weight: 700;
+      appearance: none;
+      cursor: pointer;
+      font-style: italic;
+      color:rgb(114, 156, 97);
+      box-shadow: 0 0 10px rgba(88, 129, 87, 0.35);
+    }
+
+    .custom-select select option {
+      background: #e0f5e2;
+      color: #1d3c28;
+      padding: 12px;
+      margin: 6px 0;
+      font-style: italic;
+      border-radius: 10px;
+      border: 2px solid rgba(6, 40, 2, 0.87);
+    }
+
+    .custom-select select option[value=""] {
+      color: #4b6043;
+      font-style: italic;
+    }
+
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 30px;
+      background: rgb(36, 73, 35);
+      color: #fef9f3;
+      padding: 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 30px rgba(64, 104, 73, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(to left, #355e3b, #2e4c32);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 38px rgba(58, 94, 67, 0.6);
+    }
+
+    .submit-btn i {
+      font-style: normal;
+      font-size: 20px;
+    }
+
+    .text {
+      position: fixed;
+      top: 30px;
+      left: 15%;
+      transform: translateX(-50%);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 38px;
+      background: linear-gradient(to right,rgb(13, 46, 0),rgb(7, 48, 3),rgb(14, 52, 0));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px rgba(1, 27, 15, 0.44);
+      z-index: 1;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color:rgb(114, 156, 97);
+      opacity: 1;
+      font-style: italic;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+  <div class="form-title">
+    <div class="form-title-icon"><img src="logo.png" alt="logo"></div>
+    <h1><b>Employee Registration</b></h1>
+  </div>
+
+  <form>
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name" required>
+
+    <label>Contact Number</label>
+    <input type="number" placeholder="Enter your phone number" required>
+
+    <label>Address</label>
+    <textarea placeholder="Your address" required></textarea>
+
+    <label>Company Name</label>
+    <input type="text" placeholder="Company name" required>
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Your email" required>
+
+    <label>Department</label>
+    <div class="custom-select">
+      <select required>
+        <option value="">Select Department</option>
+        <option>HR</option>
+        <option>Sales</option>
+        <option>Development</option>
+        <option>Marketing</option>
+        <option>Others</option>
+      </select>
+    </div>
+
+    <label>Gender</label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" required> Male</label>
+      <label><input type="radio" name="gender"> Female</label>
+      <label><input type="radio" name="gender"> Prefer not to say</label>
+    </div>
+
+    <button class="submit-btn" type="submit">
+      <i> Submit Form</i>
+    </button>
+  </form>
+</div></b>
+
+<div class="text">@NEURONEXUS</div>
+
+</body>
+</html>

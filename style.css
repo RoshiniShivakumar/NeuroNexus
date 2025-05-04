@@ -209,7 +209,7 @@
     }
 
     .text {
-      position: fixed;
+      position: absolute;
       top: 30px;
       left: 15%;
       transform: translateX(-50%);

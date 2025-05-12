@@ -27,7 +27,7 @@
       background: rgba(255, 255, 255, 0.15);
       border-radius: 24px;
       backdrop-filter: blur(12px);
-      padding: 45px 50px;
+      padding: 48px 50px;
       max-width: 600px;
       margin: 60px auto;
       box-shadow: 0 20px 60px rgba(0,0,0,0.4);
@@ -211,7 +211,7 @@
     .text {
       position: absolute;
       top: 30px;
-      left: 15%;
+      left: 18%;
       transform: translateX(-50%);
       font-family: 'Orbitron', sans-serif;
       font-size: 38px;
